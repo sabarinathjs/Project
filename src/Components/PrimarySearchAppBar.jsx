@@ -26,7 +26,7 @@ import { useNavigate } from 'react-router-dom';
 import NavtoHome from './NavtoHome';
 import Searchbar from './Searchbar';
 import { createBrowserRouter } from 'react-router-dom';
-
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -175,9 +175,9 @@ export default function PrimarySearchAppBar() {
             variant="h6"
             noWrap
             component="div"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
+            sx={{ display: { xs: 'none', sm: 'block' ,fontSize:'40px',fontFamily:'bold'} }}
           >
-            SSS
+             <ShoppingBagIcon sx={{fontSize:'30px',marginBottom:'10px'}}/>Demand Zone
           </Typography>
           <Searchbar/>
          
