@@ -1,5 +1,4 @@
-import React from 'react'
-import { Box, Card, CardActionArea, CardContent, CardMedia, Typography,Button,Grid } from '@mui/material'
+import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material'
 import { Menulist } from './Datastove'
 import StadiumIcon from '@mui/icons-material/Stadium';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -35,7 +34,7 @@ function Stove() {
                        <b>
                         Price:{menu1.price}
                         </b>
-                     <Button sx={{marginLeft:"200px"}}>Add to Cart</Button>
+                        <button className="addcart" style={{marginLeft:"200px",backgroundColor:"black",fontWeight:"700px",color:"white"}}>Add to Cart</button>
                      </Typography>
                 </CardContent>
               </CardActionArea>

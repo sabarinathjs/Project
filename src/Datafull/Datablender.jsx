@@ -1,42 +1,40 @@
-import Hp from './Cartcontent/Laptop/pic1.jpg'
-import Dell from './Cartcontent/Laptop/pic2.jpg'
-import Aser from './Cartcontent/Laptop/pic3.jpg'
-// import Stove1 from '../Datafull/images/Stove1.jpg'
-// import Stove2 from '../Datafull/images/Stove2.jpg'
-// import Stove3 from '../Datafull/images/Stove3.jpg'
+import blend1 from './Cartcontent/blenders/pic1.jpg'
+import blend2 from './Cartcontent/blenders/pic2.jpg'
+import blend3 from './Cartcontent/blenders/pic3.jpg'
+
 import StarRateIcon from '@mui/icons-material/StarRate';
 import StarHalfIcon from '@mui/icons-material/StarHalf';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-export const Laplist =[
+export const Blenderlist =[
     {
        
-        name : 'Hp',
-        description : 'Hp pavilion',
-        image : Hp,
+        name : 'CookWell',
+        description : 'A new bullet mixer',
+        image : blend1,
         Rating : <>
         <StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarHalfIcon  sx={{color:"gold"}}/><StarBorderIcon sx={{color:"gold"}}/>
         </>,
-        price :  70000
+        price :  2450
     },
     {
        
-        name : 'Apple',
-        description : 'MacBook series',
-        image : Dell,
+        name : 'Wonderchef',
+        description : 'Smothie maker',
+        image : blend2,
         Rating : <>
         <StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/> <StarRateIcon sx={{color:"gold"}}/><StarBorderIcon sx={{color:"gold"}}/>
         </>,
-        price : 67000
+        price : 3420
     },
     {
        
-        name : 'Aser',
-        description : 'Aser notebook 15',
-        image : Aser,
+        name : 'Romino',
+        description : 'Mini grinder!!',
+        image : blend3,
         Rating : <>
         <StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarHalfIcon  sx={{color:"gold"}}/><StarBorderIcon sx={{color:"gold"}}/>
         </>,
-        price : 55000
+        price : 2690
     },
    
 ]

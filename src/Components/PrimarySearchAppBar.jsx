@@ -27,7 +27,7 @@ import NavtoHome from './NavtoHome';
 import Searchbar from './Searchbar';
 import { createBrowserRouter } from 'react-router-dom';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -97,6 +97,7 @@ export default function PrimarySearchAppBar() {
   const handleCheckout=()=>{
     navigate('/checkout');
   }
+ 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu
@@ -183,21 +184,13 @@ export default function PrimarySearchAppBar() {
          
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ mr:2, alignContent:"space-evenly",justifyContent:"space-evenly", justifyItems:"center",alignItems:"center",display: { xs: 'none', md: 'flex' } }} >
-          {/* <Button onClick={navigatetohome} variant="contained" sx={{height:"40px", background:"black", fontFamily:"inherit" ,backgroundColor:"white" , color:"black",marginRight:"10px",marginLeft:"10px"}}  >
-         Home
-      </Button> */}
-            {/* <Button sx={{height:"40px"}}><ShoppingCartCheckoutIcon sx={{color:"white",height:"20px"}}/></Button> */}
+         
             <IconButton size="large"
             edge="start"
             color="inherit"
             aria-label="open drawer"
             sx={{ mr: 2 }}>
               <IconButton
-              // size="large"
-              // edge="end"
-              // aria-label="account of current user"
-              // aria-controls={menuId}
-              // aria-haspopup="true"
                onClick={handleCheckout}
                color="inherit"
               >

@@ -1,42 +1,38 @@
-import Hp from './Cartcontent/Laptop/pic1.jpg'
-import Dell from './Cartcontent/Laptop/pic2.jpg'
-import Aser from './Cartcontent/Laptop/pic3.jpg'
-// import Stove1 from '../Datafull/images/Stove1.jpg'
-// import Stove2 from '../Datafull/images/Stove2.jpg'
-// import Stove3 from '../Datafull/images/Stove3.jpg'
+import crock1 from './Cartcontent/Crock pots/pic1.jpg'
+import crock2 from './Cartcontent/Crock pots/pic2.jpeg'
+import crock3 from './Cartcontent/Crock pots/pic3.jpg'
 import StarRateIcon from '@mui/icons-material/StarRate';
 import StarHalfIcon from '@mui/icons-material/StarHalf';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-export const Laplist =[
+export const Crockslist =[
     {
-       
-        name : 'Hp',
-        description : 'Hp pavilion',
-        image : Hp,
+        head:"Stove",
+        name : 'Rival',
+        description : 'Steel holder..',
+        image : crock1,
         Rating : <>
         <StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarHalfIcon  sx={{color:"gold"}}/><StarBorderIcon sx={{color:"gold"}}/>
         </>,
-        price :  70000
+        price :  3000
     },
     {
-       
-        name : 'Apple',
-        description : 'MacBook series',
-        image : Dell,
+        head:"Stove",
+        name : 'Savary',
+        description : 'Double sided hot pots',
+        image : crock2,
         Rating : <>
         <StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/> <StarRateIcon sx={{color:"gold"}}/><StarBorderIcon sx={{color:"gold"}}/>
         </>,
-        price : 67000
+        price : 6700
     },
     {
-       
-        name : 'Aser',
-        description : 'Aser notebook 15',
-        image : Aser,
+        head:"Stove",
+        name : 'Philips',
+        description : 'The original slow cooker',
+        image : crock3,
         Rating : <>
         <StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarHalfIcon  sx={{color:"gold"}}/><StarBorderIcon sx={{color:"gold"}}/>
         </>,
-        price : 55000
+        price : 5000
     },
-   
 ]

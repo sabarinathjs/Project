@@ -6,6 +6,7 @@ import StarHalfIcon from '@mui/icons-material/StarHalf';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 export const Menulist =[
     {
+        head:"Stove",
         name : 'Bajaj',
         description : 'Single Flamed Stove makes your whole work easy!',
         image : Stove1,
@@ -15,6 +16,7 @@ export const Menulist =[
         price :  70000
     },
     {
+        head:"Stove",
         name : 'Preethi new Induction Stove',
         description : 'Fire Inspire!!!',
         image : Stove2,
@@ -24,6 +26,7 @@ export const Menulist =[
         price : 67000
     },
     {
+        head:"Stove",
         name : 'Premier',
         description : 'Premium in Everything - Double Slotted Gas Stove!!!',
         image : Stove3,

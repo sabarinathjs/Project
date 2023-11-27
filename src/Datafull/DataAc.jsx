@@ -1,42 +1,39 @@
-import Hp from './Cartcontent/Laptop/pic1.jpg'
-import Dell from './Cartcontent/Laptop/pic2.jpg'
-import Aser from './Cartcontent/Laptop/pic3.jpg'
-// import Stove1 from '../Datafull/images/Stove1.jpg'
-// import Stove2 from '../Datafull/images/Stove2.jpg'
-// import Stove3 from '../Datafull/images/Stove3.jpg'
+import Ac1 from './Cartcontent/Ac/pic1.jpg'
+import Ac2 from './Cartcontent/Ac/pic2.jpeg'
+import Ac3 from './Cartcontent/Ac/pic3.jpeg'
+
 import StarRateIcon from '@mui/icons-material/StarRate';
 import StarHalfIcon from '@mui/icons-material/StarHalf';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-export const Laplist =[
+export const Aclist =[
     {
        
-        name : 'Hp',
-        description : 'Hp pavilion',
-        image : Hp,
+        name : 'LG',
+        description : 'Life is good with cooler..',
+        image : Ac1,
         Rating : <>
         <StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarHalfIcon  sx={{color:"gold"}}/><StarBorderIcon sx={{color:"gold"}}/>
         </>,
-        price :  70000
+        price :  37000
     },
     {
-       
-        name : 'Apple',
-        description : 'MacBook series',
-        image : Dell,
+        name : 'Daikin',
+        description : 'Known for its innovative',
+        image : Ac2,
         Rating : <>
         <StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/> <StarRateIcon sx={{color:"gold"}}/><StarBorderIcon sx={{color:"gold"}}/>
         </>,
-        price : 67000
+        price : 45000
     },
     {
        
-        name : 'Aser',
-        description : 'Aser notebook 15',
-        image : Aser,
+        name : 'Godrej',
+        description : 'A globally recognized brand!!',
+        image : Ac3,
         Rating : <>
         <StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarHalfIcon  sx={{color:"gold"}}/><StarBorderIcon sx={{color:"gold"}}/>
         </>,
-        price : 55000
+        price : 33000
     },
    
 ]
