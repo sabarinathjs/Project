@@ -9,4 +9,5 @@ const Router=createBrowserRouter([
     {path:"/cart",element:<Cart />}
 
 ])
-export default Router;
+
+export default Router; 
