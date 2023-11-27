@@ -1,11 +1,14 @@
 import Hp from './Cartcontent/Laptop/pic1.jpg'
 import Dell from './Cartcontent/Laptop/pic2.jpg'
 import Aser from './Cartcontent/Laptop/pic3.jpg'
+// import Stove1 from '../Datafull/images/Stove1.jpg'
+// import Stove2 from '../Datafull/images/Stove2.jpg'
+// import Stove3 from '../Datafull/images/Stove3.jpg'
 import StarRateIcon from '@mui/icons-material/StarRate';
 import StarHalfIcon from '@mui/icons-material/StarHalf';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
- export const Laplist=[
-        {
+export const Laplist =[
+    {
         name : 'Hp',
         description : 'Hp pavilion',
         image : Hp,
@@ -15,6 +18,7 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
         price :  70000
     },
     {
+       
         name : 'Apple',
         description : 'MacBook series',
         image : Dell,
@@ -24,6 +28,7 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
         price : 67000
     },
     {
+       
         name : 'Aser',
         description : 'Aser notebook 15',
         image : Aser,
@@ -32,5 +37,5 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
         </>,
         price : 55000
     },
-
+    
 ]

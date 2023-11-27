@@ -28,11 +28,8 @@ import { useNavigate } from 'react-router-dom';
 import NavtoHome from './NavtoHome';
 import Searchbar from './Searchbar';
 import { createBrowserRouter } from 'react-router-dom';
-import NewLogin from './NewLogin';
-import { createContext } from "react";
-import Display from './Display';
 
-export const AuthContext = createContext({});
+
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -102,6 +99,7 @@ export default function PrimarySearchAppBar() {
   const handleCheckout=()=>{
     navigate('/checkout');
   }
+ 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu
@@ -180,29 +178,21 @@ export default function PrimarySearchAppBar() {
             variant="h6"
             noWrap
             component="div"
-            sx={{ display: { xs: 'none', sm: 'block' },fontColor:'yellow' }}
+            sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            <ShoppingBagIcon sx={{fontSize:'30px',marginBottom:'10px'}}/>Demand Zone
+            SSS
           </Typography>
           <Searchbar/>
          
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ mr:2, alignContent:"space-evenly",justifyContent:"space-evenly", justifyItems:"center",alignItems:"center",display: { xs: 'none', md: 'flex' } }} >
-          {/* <Button onClick={navigatetohome} variant="contained" sx={{height:"40px", background:"black", fontFamily:"inherit" ,backgroundColor:"white" , color:"black",marginRight:"10px",marginLeft:"10px"}}  >
-         Home
-      </Button> */}
-            {/* <Button sx={{height:"40px"}}><ShoppingCartCheckoutIcon sx={{color:"white",height:"20px"}}/></Button> */}
+         
             <IconButton size="large"
             edge="start"
             color="inherit"
             aria-label="open drawer"
             sx={{ mr: 2 }}>
               <IconButton
-              // size="large"
-              // edge="end"
-              // aria-label="account of current user"
-              // aria-controls={menuId}
-              // aria-haspopup="true"
                onClick={handleCheckout}
                color="inherit"
               >

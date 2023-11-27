@@ -1,38 +1,39 @@
-import Stove1 from './Cartcontent/Stove/pic1.jpg'
-import Stove2 from './Cartcontent/Stove/pic2.jpeg'
-import Stove3 from './Cartcontent/Stove/pic3.jpg'
+import Ac1 from './Cartcontent/Ac/pic1.jpg'
+import Ac2 from './Cartcontent/Ac/pic2.jpeg'
+import Ac3 from './Cartcontent/Ac/pic3.jpeg'
+
 import StarRateIcon from '@mui/icons-material/StarRate';
 import StarHalfIcon from '@mui/icons-material/StarHalf';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-export const Menulist =[
+export const Aclist =[
     {
-        head:"Stove",
-        name : 'Bajaj',
-        description : 'Single Flamed Stove makes your whole work easy!',
-        image : Stove1,
+       
+        name : 'LG',
+        description : 'Life is good with cooler..',
+        image : Ac1,
         Rating : <>
         <StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarHalfIcon  sx={{color:"gold"}}/><StarBorderIcon sx={{color:"gold"}}/>
         </>,
-        price :  70000
+        price :  37000
     },
     {
-        head:"Stove",
-        name : 'Preethi new Induction Stove',
-        description : 'Fire Inspire!!!',
-        image : Stove2,
+        name : 'Daikin',
+        description : 'Known for its innovative',
+        image : Ac2,
         Rating : <>
         <StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/> <StarRateIcon sx={{color:"gold"}}/><StarBorderIcon sx={{color:"gold"}}/>
         </>,
-        price : 67000
+        price : 45000
     },
     {
-        head:"Stove",
-        name : 'Premier',
-        description : 'Premium in Everything - Double Slotted Gas Stove!!!',
-        image : Stove3,
+       
+        name : 'Godrej',
+        description : 'A globally recognized brand!!',
+        image : Ac3,
         Rating : <>
         <StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarRateIcon sx={{color:"gold"}}/><StarHalfIcon  sx={{color:"gold"}}/><StarBorderIcon sx={{color:"gold"}}/>
         </>,
-        price : 55000
+        price : 33000
     },
+   
 ]

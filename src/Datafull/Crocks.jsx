@@ -1,26 +1,20 @@
-import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material'
-import { Menulist } from './Datastove'
-import StadiumIcon from '@mui/icons-material/Stadium';
+import { Box, Card, CardActionArea, CardContent, CardMedia, Typography,Button } from '@mui/material'
+import { Crockslist } from './Datacrocks'
+import DirectionsOffIcon from '@mui/icons-material/DirectionsOff';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-function Stove({count,setcount,cart,setcart,tprice,setprice}) {
-  const solve=(myname,price)=>{
-     setcount(count+1);
-    setcart([...cart,myname]);
-    setprice(tprice+price)
-    alert("added to cart");
-  };
+function Crocks() {
   return (
      <>
      <Box sx={{bgcolor:"black",color:"white",p:2}}>
       <Typography varient="h5"sx={{color:'white',textAlign:'center' ,fontFamily:"bold",fontSize:'30px'}} >
-       <StadiumIcon sx={{fontSize:'49px',paddingBottom:'10px'}}/> STOVE
+       <DirectionsOffIcon sx={{fontSize:'49px',paddingBottom:'10px'}}/> CROCK POTS
       </Typography >
       <Typography varient="h5"sx={{color:'white',fontFamily:"bold",fontSize:'30px'}}>Sort by <ArrowDropDownIcon/>
       <input style={{borderRadius:"5px"}}></input></Typography>
      </Box>
      <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center" ,paddingTop:3}}>
       {
-          Menulist.map((menu1) =>(
+          Crockslist.map((menu1) =>(
             <Card sx={{maxWidth:450,display:'flex',m: 2}}>
               <CardActionArea>
  <CardMedia sx={{minHeight: '400px',minWidth:'400px'}} component={'img'} src={menu1.image} alt={menu1.name}/>
@@ -40,26 +34,16 @@ function Stove({count,setcount,cart,setcart,tprice,setprice}) {
                        <b>
                         Price:{menu1.price}
                         </b>
-                     <Button sx={{marginLeft:"200px"}}>Add to Cart</Button>
+                        <button className="addcart" style={{marginLeft:"200px",backgroundColor:"black",fontWeight:"700px",color:"white"}}>Add to Cart</button>
                      </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
-        )) 
+        ))
       }
      </Box>
-     {/* <ul>
-        {cartlist.map((element, index) => (
-          <li
-            className="my-4 px-4 border-2 rounded-lg"
-            key={index}
-          >
-            {element}
-          </li>
-        ))}
-        </ul>         */}
      </>
   )
 }
 
-export default Stove
+export default Crocks;
